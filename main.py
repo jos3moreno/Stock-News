@@ -2,15 +2,15 @@ import requests
 from twilio.rest import Client
 
 
-STOCK_API_KEY = "WCHB5MCUSMPHBGVG"
-NEWS_API_KEY = "7fdf34b86735472db672bbabbf514b15"
-account_sid = "AC46301885bb465daa2dbbfd10e45fdd1a"
-auth_token = "5455fdb400bc0b8c3108b01f38ecc9a1"
+STOCK_API_KEY = "XXXXX"
+NEWS_API_KEY = "XXXXXXXXXXXXXX"
+account_sid = "XXXXXXXXXXXXXXXXXXXXX"
+auth_token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-STOCK_NAME = "AAPL"
-COMPANY_NAME = "Apple"
+STOCK_NAME = "TSLA"
+COMPANY_NAME = "Tesla"
 
 # Dictionary with the parameter for the STOCK_ENDPOINT API
 parameters = {
@@ -64,6 +64,6 @@ if percentage_difference > 0:
         message = client.messages \
             .create(
             body=article,
-            from_='+19034194260',
-            to='8588778977'
+            from_='+190341XXXXX',
+            to='858XXXXXXX'
         )
